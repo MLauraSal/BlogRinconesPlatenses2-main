@@ -13,6 +13,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: var(--box-shadow);
+    margin-top: 0;
 }
 
 .home_cultura .content {
@@ -44,7 +45,7 @@
     text-align: center;
     margin-top: 2rem;
     padding-bottom: 3rem;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--exDark);
 }
 

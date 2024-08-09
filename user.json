@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "email": "admin@example.com",
+            "profilePic": "./images/admin/avatar.png"
+          }
+          
+    ]
+}

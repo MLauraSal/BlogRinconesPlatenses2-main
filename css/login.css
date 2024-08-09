@@ -63,7 +63,7 @@
     padding: 10px 0 10px 0;
 }
 
-#input-field{
+.input-field{
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -75,7 +75,7 @@
     outline: none;
     transition: .2s ease;
 }
-#input-field:hover, #input-field:focus{
+.input-field:hover, .input-field:focus{
     border: 3px solid #454749;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
@@ -83,7 +83,7 @@
 ::-webkit-input-placeholder{
     color: #fff;
 }
-#input-box #icono{
+.input-box #icono{
     position: relative;
     top: -35px;
     left: 17px;
@@ -124,7 +124,7 @@
 .two label a:hover{
     text-decoration: underline;
 }
-#profilePicture {
+#profilePic {
     display: none;
 }
 .file-label {

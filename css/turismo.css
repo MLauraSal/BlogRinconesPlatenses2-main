@@ -13,6 +13,7 @@
     background: url(../images/turismo/experiencia_gastronomica.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 0;
 }
 
 .home .content {
@@ -40,13 +41,13 @@
   #SECTION CATEGORIES
 \*-----------------------------------*/
 .categories {
-    padding: 4.5rem 0;
+    padding: 2rem 0;
     
 }
 
 .heading {
     text-align: center;
-    
+    margin-top: 0;
     padding-bottom: 3rem;
     font-size: 4rem;
     color: var(--exDark);
