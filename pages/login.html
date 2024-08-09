@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rincones Platenses-Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--Google Fonts-->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+
+
+
+
+
+
+</head>
+
+
+<body class="body">
+    <!---------- HEADER ---------->
+    <header class="header">
+
+        <nav class="container nav-container ">
+
+            <img src="/image/home/logo.png" alt="logo" class="nav-logo">
+
+
+            <ul class="nav-items" id="navMenu">
+                <li><a href="../index.html" class="item">Home</a></li>
+                <li><a href="turismo.html" class="item">Turismo</a></li>
+                <li><a href="noticias.html" class="item">Noticias</a></li>
+                <li><a href="cultura.html" class="item">Cultura</a></li>
+                <li><a href="contact.html" class="item">Contacto</a></li>
+                
+                <li>
+                    <div class="nav-profile" id="navButton">
+                      <a href="login.html">Sign In</a>
+                     
+                    </div>
+                  </li>
+        
+            </ul>
+            <button id="nav_open-btn"><i class="fas fa-bars"></i></button>
+            <button id="nav_close-btn"><i class="far fa-window-close"></i></button>
+
+
+        </nav>
+
+
+
+
+
+    </header>
+    <!-- end of header -->
+
+    <!-- main -->
+    <main>
+
+        <div class="wrapper">
+
+            <!----------------------------- Form box ----------------------------------->
+            <div class="form-box">
+                <form class="login-container" id="loginForm">
+                    <div class="top">
+                        <span>Don't have an account? <a href="register.html">Sign Up</a></span>
+                        <h2 class="form-title">Login</h2>
+                    </div>
+                    <div id="input-box">
+                        <input type="text" id="input-field" placeholder="Username" id="user" required>
+                        <i class="fas fa-user" id="icono"></i>
+                    </div>
+                    <div id="input-box">
+                        <input type="password" id="input-field" placeholder="Password" id="password" required>
+                        <i class="fas fa-lock" id="icono"></i>
+                    </div>
+                    <div id="input-box">
+                        <input type="submit" class="submit" value="Login">
+                    </div>
+                    <div class="two-col">
+                        <div class="one">
+                            <input type="checkbox" id="login-check">
+                            <label for="login-check"> Remember Me</label>
+                        </div>
+                        <div class="two">
+                            <label><a href="#">Forgot password?</a></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <span>Turismo & Cultura Blog</span>
+
+        <!-- Copyright -->
+
+        <div class="copyright">
+            &copy; 2024 <span>Code Divas</span> - Todos los Derechos Reservados.
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <script src="../js/login.js"></script>
+    <script src="../js/perfil.js"></script>
+
+</body>
+
+</html>

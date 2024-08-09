@@ -1,0 +1,144 @@
+
+/*-----------------------------------*\
+  #SECTION CONTACT
+\*-----------------------------------*/
+.contact {
+    max-width: 900px;
+    margin: 200px auto 150px auto; 
+    padding: 40px;
+    height: auto;
+    background:var(--white); 
+    border-radius: 10px; 
+    box-shadow: var(--box-shadow);
+}
+
+.container-form{
+    width: 100%;
+   display:  grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 50px;
+   
+}
+.container-form  h2{
+   margin-bottom: 15px;
+   font-size: 35px;
+
+}
+.container-form  p{
+   font-size:   17px;
+   line-height:  1.6;
+   margin-bottom:  30px;
+
+}
+.container-form  a {
+   font-size:  15px;
+   display:  inline-block;
+   text-decoration:  none;
+   width:  100%;
+   margin-bottom:  15px;
+   color: black;
+   font-weight: 500;
+}
+.container-form a i{
+   color: orange;
+   margin-right:  10px;
+}
+.container-form form  .campo, textarea{
+   width:  100%;
+   padding:  15px   10px;
+   font-size: 15px;
+   border: 1px solid #dbdbdb;
+   margin-bottom: 20px;
+   border-radius: 3px;
+   outline: 0px;
+}
+
+.container-form  .btn{
+   padding:  15px;
+   font-size:  16px;
+   border: none;
+   outline: 0px;
+   background: orange;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: all 300ms ease;
+}
+
+.container-form .btn:hover {
+    color: orange;
+    background-color: var(--white);
+    border: 1px solid orange;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media screen and ((min-width: 375px) and (max-width: 539px)) {
+
+  
+    .contact {
+        max-width: 300px;
+        margin: 150px auto 150px auto;
+        
+    }
+
+    .contact .container-form {
+       
+       grid-template-columns: repeat(1,1fr);
+    }
+
+    .container-form .info-form {
+        width: 70%;
+    }
+
+    
+
+    .container-form form textarea{
+       width: 100%;
+     
+     }
+}
+@media screen and ((min-width: 540px) and (max-width: 768px)) {
+
+   
+
+    .contact {
+        max-width: 500px;
+        margin: 150px auto 150px auto;
+        
+    }
+
+    .contact .container-form {
+       
+       grid-template-columns: repeat(1,1fr);
+    }
+
+    .container-form .info-form {
+        width: 70%;
+    }
+
+    .container-form form  .campo, textarea{
+        width:  100%;
+        padding: 15px 10px;
+        
+        
+    }
+
+    .container-form form textarea{
+       width: 100%;
+     
+     }
+}
+
+@media screen and ((min-width: 769px )and (max-width: 992px)) {
+   
+
+    .contact {
+        max-width: 700px;
+        margin: 150px auto 150px auto;
+        
+    }
+
+
+}
