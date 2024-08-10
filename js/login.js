@@ -3,7 +3,7 @@ const adminUser = {
     username: "admin",
     password: "admin123",
     email: "admin@example.com",
-    profilePic: "./images/admin/avatar.png"
+    profilePic: "../images/avatar/avatar.jpg"
   };
   
   // Guardar admin en el localStorage si no está ya guardado
@@ -38,7 +38,7 @@ const adminUser = {
       users.push(newUser);
       localStorage.setItem('users', JSON.stringify(users));
       alert("Usuario registrado con éxito");
-      window.location.href = "./login.html";
+      window.location.href = "../index.html";
     };
     reader.readAsDataURL(profilePic);
   }
@@ -58,7 +58,7 @@ const adminUser = {
     if (foundUser) {
       localStorage.setItem('loggedInUser', JSON.stringify(foundUser));
       alert("Inicio de sesión exitoso");
-      window.location.href = "/index.html";
+      window.location.href = "../index.html";
     } else {
       alert("Usuario o contraseña incorrectos");
     }
@@ -80,7 +80,7 @@ const adminUser = {
       document.getElementById('logoutLink').addEventListener('click', function(event) {
         event.preventDefault();
         localStorage.removeItem('loggedInUser');
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
       });
     }
   }
