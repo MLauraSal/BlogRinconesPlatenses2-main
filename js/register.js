@@ -16,7 +16,11 @@ document.getElementById('registerForm').addEventListener('submit', (e) => {
         };
         
         localStorage.setItem('user', JSON.stringify(userData));
-        alert('Registro exitoso');
+         // Recuperar el usuario del localStorage y parsear el JSON
+         const storedUser = JSON.parse(localStorage.getItem('user'));
+        
+         // Mostrar el alert con el nombre de usuario
+         alert(`Bienvenid@ ${storedUser.username} a nuestra página!!`);
         window.location.href = 'login.html';
     };
     

@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 650px;
+    min-height: 450px;
     align-items: center;
     background: url(../images/turismo/experiencia_gastronomica.jpg) no-repeat;
     background-size: cover;
@@ -17,10 +17,8 @@
 }
 
 .home .content {
-    
     text-align: center;
     width: 80rem;
-    
 }
 
 .content h1 {
