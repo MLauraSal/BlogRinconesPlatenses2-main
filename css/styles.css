@@ -4,6 +4,7 @@
 @import "turismo.css";
 @import "cultura.css";
 @import "login.css";
+@import "register.css";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -417,19 +418,8 @@ footer {
     margin: 0;
 
   }
- 
-  .login-container, .register-container {
-    width: 100%;
-    
-  }
-  .input-field{
-    
-   
-    height: 50px;
-    width: 50%;
-    
-    
-}
+
+  
 
 }
 
