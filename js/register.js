@@ -1,10 +1,10 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('registerForm').addEventListener('submit', (e) => {
+    e.preventDefault();
     
     const username = document.getElementById('user').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const profilePicture = document.getElementById('profilePicture').files[0];
+    const profilePic = document.getElementById('profilePic').files[0];
     
     const reader = new FileReader();
     reader.onload = function() {
@@ -12,7 +12,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
             username: username,
             email: email,
             password: password,
-            profilePicture: reader.result // Guardar la imagen como un string en base64
+            profilePic: reader.result // Guardar la imagen como un string en base64
         };
         
         localStorage.setItem('user', JSON.stringify(userData));
@@ -20,5 +20,5 @@ document.getElementById('registerForm').addEventListener('submit', function(even
         window.location.href = 'login.html';
     };
     
-    reader.readAsDataURL(profilePicture);
+    reader.readAsDataURL(profilePic);
 });

@@ -30,45 +30,42 @@
 
 <body>
 
+<!---------- HEADER ---------->
+<header class="header">
 
-  <!---------- HEADER ---------->
-  <header class="header">
+  <nav class="container nav-container ">
 
-    <nav class="container nav-container">
-      
-        <img src="./images/home/logo.png" alt="logo" class="nav-logo">
-      
-      
-        <ul class="nav-items">
-          <li><a href="/index.html" class="item" >Home</a></li>
-          <li><a href="./pages/turismo.html" class="item" >Turismo</a></li>
-          <li><a href="./pages/noticias.html" class="item">Noticias</a></li>
-          <li><a href="./pages/cultura.html" class="item">Cultura</a></li>
-          <li><a href="./pages/contact.html" class="item">Contacto</a></li>
-        
-          <li>
-            <div id="nav-profile" id="navButton">
-              <a href="./pages/login.html" class="item" id="loginLink">Sign In</a>
-              <div class="avatar" style="display: none;">
-                  <img src="" alt="avatar">
-              </div>
-              <ul style="display: none;">
-                  <li><a href="#" id="logoutLink">Logout</a></li>
-              </ul>
-            </div>
-          </li>
+    <img src="./images/home/logo.png" alt="logo" class="nav-logo">
 
-        </ul>
-        <button class="button" id="nav_open-btn"><i class="fas fa-bars"></i></button>
-        <button class="button" id="nav_close-btn"><i class="far fa-window-close"></i></button>
-     
-      
-     
-     
-    </nav>
-  </header>
 
-  <!-- end of header -->
+    <ul class="nav-items" id="navMenu">
+      <li><a href="index.html" class="item">Home</a></li>
+      <li><a href="./pages/turismo.html" class="item">Turismo</a></li>
+      <li><a href="./pages/noticias.html" class="item">Noticias</a></li>
+      <li><a href="./pages/cultura.html" class="item">Cultura</a></li>
+      <li><a href="./pages/contact.html" class="item">Contacto</a></li>
+      
+      <li>
+        <div class="nav-profile" id="navButton">
+          <a href="./pages/login.html" class="item">Sign In</a>
+         
+        </div>
+      </li>
+
+    </ul>
+    <button id="nav_open-btn"><i class="fas fa-bars"></i></button>
+    <button id="nav_close-btn"><i class="far fa-window-close"></i></button>
+
+
+  </nav>
+
+
+
+
+
+</header>
+
+<!-- end of header -->
     <!-- banner -->
     <div class="banner">
       <div class="container">
@@ -281,10 +278,11 @@
     </div>
   </footer>
   <!-- end of footer -->
-  <script src="./js/login.js"></script>
+ 
   <script src="./js/script.js"></script>
   <script src="./js/index.js"></script>
-
+  <script src="./js/perfil.js"></script>
+    
 
 </body>
 

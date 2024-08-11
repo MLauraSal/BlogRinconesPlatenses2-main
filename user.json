@@ -1,10 +1,10 @@
 {
     "users": [
         {
-            "username": "admin",
+            "username": "Admin",
             "password": "admin123",
             "email": "admin@example.com",
-            "profilePic": "./images/admin/avatar.png"
+            "profilePic": "images/avatar/avatar1.jpg"
           }
           
     ]
