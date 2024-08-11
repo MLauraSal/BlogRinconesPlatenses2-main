@@ -8,7 +8,6 @@ El proyecto que presentamos se centra en la creación de un Blog donde poder mos
 
 ## Participantes:  
 
-* Jhosselyn Espinoza Taipe
 * Mariana Salgueiro
 
 
