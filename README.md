@@ -54,4 +54,4 @@ Nuestro proyecto cuenta con 5 paginas funcionales:
 
 ## Vista de la pagina:
 
-[Ir a la pagina]([https://blogturismoycultura-codedivas.netlify.app](https://blog-rincones-platenses2-main.vercel.app/))
+[Ir a la pagina]([https://blog-rincones-platenses2-main.vercel.app/])
