@@ -38,7 +38,7 @@
   #SECTION CULTURA CARDS
 \*-----------------------------------*/
 
-.heading {
+#heading {
     text-align: center;
     margin-top: 2rem;
     padding-bottom: 3rem;
@@ -51,6 +51,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+    margin-bottom: 4rem;
 }
 .card {
     position: relative;
