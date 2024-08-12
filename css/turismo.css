@@ -24,7 +24,7 @@
     line-height: 1.2;
     backdrop-filter: blur(6px);
 }
-.banner_turismo-title span{
+.banner-title span{
     font-family: var(--Playfair);
     color: var(--exDark);
 }
