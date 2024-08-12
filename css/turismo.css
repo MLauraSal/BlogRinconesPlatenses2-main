@@ -3,7 +3,7 @@
   #BANNER
 \*-----------------------------------*/
 
-.banner{
+.banner_turismo{
     min-height: 100vh;
     height: 650px;
     display: flex;
@@ -16,7 +16,7 @@
     background-position: center;
 }
 
-.banner h1{
+.banner_turismo h1{
     margin-top: 4rem;
     font-size: 4rem;
     color: var(--white);
@@ -24,7 +24,7 @@
     line-height: 1.2;
     backdrop-filter: blur(6px);
 }
-.banner-title span{
+.banner_turismo-title span{
     font-family: var(--Playfair);
     color: var(--exDark);
 }
@@ -35,14 +35,6 @@
     font-family: var(--Roboto);
     font-weight: 300;
     word-spacing: 2px;
-}
-.banner form{
-    background: var(--white);
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
 }
 
 
