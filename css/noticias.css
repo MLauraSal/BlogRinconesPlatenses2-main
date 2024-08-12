@@ -25,6 +25,16 @@
     
 }
 
+.post-info h2 a {
+   
+    color: var(--exDark);
+    transition: var(--transition);
+}
+
+.post-info h2 a:hover {
+    text-decoration: underline;
+    color: var(--dark);
+}
 .posts-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
