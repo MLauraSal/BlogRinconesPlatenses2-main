@@ -1,7 +1,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Playfair&size=40&pause=1000&color=449CFD&random=false&width=435&lines=Turismo+%26+Cultura++Blog;Grupo++Code+Divas)](https://git.io/typing-svg)
 
-![alt text](</images/Captura de pantalla (3).png>)
+![alt text](</image/Captura de pantalla (3).png>)
 ## Introduccion:
 
 El proyecto que presentamos se centra en la creación de un Blog donde poder mostrar informacion variada de atracciones turisticas y culturales de la Ciudad de La Plata. 
@@ -36,7 +36,7 @@ La entrega se realiza subiendo la página a Github pages o a servidor gratuito y
 -Html  
 -Css
 
-![lenguajes utilizados](/images/lenguajes.jpg)
+![lenguajes utilizados](/image/lenguajes.jpg)
 
 
 ## Estructura:
