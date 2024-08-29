@@ -21,7 +21,14 @@
 .posts {
     margin-top: 0;
     background: #f9f9f9;
-    padding: 2rem ;
+    padding: 4.5rem 0;
+}
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+   
+   
     
 }
 
@@ -35,12 +42,6 @@
     text-decoration: underline;
     color: var(--dark);
 }
-.posts-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    margin-bottom: 5rem auto; 
-}
 
 .post-title {
     font-family: var(--Playfair);
@@ -52,15 +53,22 @@
 }
 
 .post-img {
-    border: 0.8rem solid var(--exDark);
-   
+    border: 0.3rem solid var(--exDark);
+    width: 100%;
+    min-height: 50px;
     margin-bottom: 1.6rem;
-    border-radius: 2rem 0;
+    border-radius: 1rem ;
     overflow: hidden;
-    height: fit-content;
+   
+ 
 }
 
-
+.post-img img {
+    
+    width: 100%;
+    height: 400px;
+    transition: transform 0.7s;
+}
 
 .post-autor {
     display: flex;

@@ -1,5 +1,5 @@
 .body{
-    background: url("../images/home/atardecer-en-un-puente-en-la-plata-argentina.webp");
+    background: url("../image/home/atardecer-en-un-puente-en-la-plata-argentina.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,6 +14,7 @@
 
 
 .form-box{
+    
     overflow: hidden;
     position: relative;
     display: flex;
@@ -102,18 +103,3 @@
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
-@media only screen and (max-width: 540px) {
-    .wrapper{
-        min-height: 100vh;
-    }
-    .form-box{
-        width: 100%;
-        height: 800px;
-    }
-    .register-container{
-        width: 100%;
-       
-        gap: 1rem;
-    }
-    
-}

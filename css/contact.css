@@ -74,7 +74,7 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-@media screen and ((min-width: 355px) and (max-width: 539px)) {
+@media screen and ((min-width: 375px) and (max-width: 539px)) {
 
   
     .contact {

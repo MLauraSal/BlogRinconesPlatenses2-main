@@ -1,18 +1,16 @@
 @import "index.css";
 @import "contact.css";
-@import "noticias.css";
-@import "turismo.css";
 @import "cultura.css";
+@import "turismo.css";
 @import "login.css";
 @import "register.css";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --Playfair: 'Playfair Display', serif;
-  --Quicksand: 'Quicksand', sans-serif;
-  --Roboto: 'Roboto', sans-serif;
+  --Playfair: "Playfair Display", serif;
+  --Quicksand: "Quicksand", sans-serif;
+  --Roboto: "Roboto", sans-serif;
 
   --dark: #111011;
   --exDark: #485843;
@@ -28,8 +26,6 @@
   --container-width-md: 74%;
   --container-width-sm: 60%;
   --form-width: 40%;
-
-
 }
 
 * {
@@ -44,20 +40,17 @@
 }
 
 body {
-
-  font-family: var(--Roboto), sans-serif;
+  font-family: var(--Playfair), sans-serif;
   line-height: 1.6;
   color: var(--dark);
   background: #eee;
   overflow-x: hidden;
-
 }
 
 img {
   width: 100%;
   display: block;
   object-fit: cover;
-
 }
 
 .container {
@@ -96,7 +89,6 @@ h3 {
 
 h4 {
   font-size: 1rem;
-
 }
 
 .item {
@@ -123,15 +115,13 @@ h4 {
 
 .nav-logo {
   border-radius: 50%;
-  width: 6%;
+  width: 5rem;
   display: block;
-
 }
 
 nav button {
   display: none;
 }
-
 
 .nav-container {
   height: 100%;
@@ -148,27 +138,24 @@ nav button {
   border-radius: 50%;
   overflow: hidden;
   border: 0.3rem solid var(--white);
-  cursor: pointer;
 }
 
 .nav-items {
   display: flex;
   align-items: center;
   gap: 4rem;
-
 }
 
 .nav-profile {
   position: relative;
   cursor: pointer;
   width: 100%;
-
 }
 
 .nav-profile ul {
   background: var(--exDark);
   position: absolute;
-  top: 190%;
+  top: 150%;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -176,11 +163,9 @@ nav button {
   visibility: hidden;
   opacity: 0;
   transition: var(--transition);
-
 }
 
-.nav-profile:hover>ul {
-
+.nav-profile:hover > ul {
   visibility: visible;
   opacity: 1;
 }
@@ -192,9 +177,7 @@ nav button {
   width: 100%;
   border-bottom: none;
   color: var(--white);
-
 }
-
 
 /*-----------------------------------*\
   #SECTION FOOTER
@@ -239,18 +222,13 @@ footer {
   letter-spacing: 2px;
 }
 
-
-
-
-
 /*-----------------------------------*\
-  #MEDIA QUERY
+  #MEDIA QUERYS
 \*-----------------------------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and ((min-width: 250px) and (max-width: 1040px)) {
   .container {
     width: var(--container-width-md);
-
   }
 
   h2 {
@@ -269,6 +247,7 @@ footer {
     font-size: 0.8rem;
   }
 
+  /*#SECTION NAVBAR*/
   nav button {
     display: inline-block;
     font-size: 1.5rem;
@@ -286,11 +265,11 @@ footer {
   }
 
   .nav-logo {
-    width: 12%;
+    width: 5rem;
   }
 
   .nav-items {
-    background: var(--exDark);
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     position: absolute;
     flex-direction: column;
     top: 100%;
@@ -300,6 +279,7 @@ footer {
     justify-content: center;
     gap: 0;
     display: none;
+    backdrop-filter: blur(6px);
   }
 
   .nav-items li {
@@ -309,16 +289,13 @@ footer {
     align-items: center;
     box-shadow: -2rem 3rem 7rem rgba(0, 0, 0, 0.7);
     border-top: 1px solid var(--exDark);
-
-
   }
 
-
-  .nav-items li a {
+  .nav-items li .item {
     border-radius: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    background: transparent;
     padding: 0 2rem;
     display: flex;
     align-items: center;
@@ -329,146 +306,244 @@ footer {
     width: 100%;
   }
 
+  .nav-profile ul li a {
+    height: 1rem;
+  }
+
   .nav-profile .avatar {
     margin-left: 5rem;
     border: 0;
   }
 
-  .search-input {
-    padding: 0.8rem 0;
+  /*#SECTION BANNER*/
+  .banner_turismo {
+    height: 350px;
   }
 
-  .search-input {
-    padding: 0.8rem 0;
+  .banner_cultura {
+    height: 350px;
   }
 
-  .info-content {
+  .banner {
+    margin-top: 0;
+    height: 350px;
+  }
 
+  .banner-title {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-
   }
 
-  .info-item {
+  .banner-title h1 {
+    font-size: 2rem;
+  }
+
+  .banner-title span {
+    font-size: 2rem;
+  }
+
+  .banner-title p {
+    margin: 0 2rem 0 2rem;
+    font-size: 0.8rem;
+  }
+
+  .banner form {
+    margin: auto;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+  }
+
+  .search-input {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.3rem 0;
+  }
+
+  /*#PAGE HOME*/
+
+  /*#SECTION NEW*/
+
+  .new {
+    padding: 0.2rem 1rem;
+  }
+
+  .new-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .new .post-img {
     margin: 0;
   }
 
-  .blog-content {
+  /*#SECTION POSTS*/
+  .category-button {
+    padding: 0.5rem 0.5rem;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
 
+  .posts-container {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
 
+  .post-info h2 a {
+    font-size: 1.3rem;
+  }
+
+  .post-body {
+    font-size: 0.8rem;
+  }
+
+  .post-img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .post_autor-avatar {
+    width: 1.5rem;
+  }
+
+  .post_autor-info {
+    font-size: 0.5rem;
+  }
+
+  /*#SECTION INFO*/
+
+  .info-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title p {
+    font-size: 0.7rem;
+  }
+
+  .info-img span:first-of-type {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .info-img span:last-of-type {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+
+  .info-title {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  /*#SECTION ABOUT*/
+  .about {
+    padding: 2rem 0;
   }
 
   .about-content {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 
-
-  .aside {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .product {
-
+  .about-content img {
     width: 100%;
-    height: 20rem;
-
-
-  }
-
-  .product .thumbnail {
-    width: 40%;
     height: auto;
-    overflow: hidden;
   }
 
-  .product h2,
-  .product p,
-  .product a {
-    font-size: 12px;
-  }
-
-  .product p {
-    font-weight: 700;
-  }
-
-  .product a {
-    font-weight: 700;
-    text-decoration: none;
-    color: blue;
-  }
-
-  .posts {
-    padding: 2rem 1rem;
-  }
-
-  .posts-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    margin: 0;
-
-  }
-
-  .posts {
-    padding: 2rem 1rem;
-  }
-
-  .posts-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    margin: 0;
-
-  }
-
-  .cultura {
-
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-  }
-
-}
-
-@media screen and ((min-width: 250px) and (max-width: 600px)) {
-
-  section {
-    margin-top: 2rem;
-  }
-
-
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  nav button {
-    display: inline-block;
-    font-size: 1.5rem;
-    background: transparent;
-    color: var(--white);
-    cursor: pointer;
-  }
-
-  .nav-logo {
-    width: 30%;
-  }
-
-  .cultura {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    margin-bottom: 4rem;
-  }
-
-  #heading {
+  .about-title h2 {
     margin-top: 0;
-    padding-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.8rem;
+  }
+
+  /*PAGE TURISMO*/
+
+  .heading {
+    margin-top: 0;
+    padding-bottom: 1rem;
     font-size: 3rem;
     color: var(--exDark);
+  }
+
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .row-img {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
+  }
+
+  .site {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .site-img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+
+  .site-text {
+    padding: 1rem;
+  }
+
+  .site-text h5 {
+    font-size: 1.5rem;
+  }
+
+  .site-text p {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  /*#PAGE CULTURA*/
+  .cultura_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    margin-top: 0;
   }
 
   .card {
@@ -492,49 +567,105 @@ footer {
     box-shadow: var(--box-shadow);
   }
 
-  .banner_turismo {
-
-    height: 350px;
-  }
-
-  .banner-title {
-    text-align: center;
+  /*#SECTION PUBLICITY*/
+  .aside {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .banner-title h1 {
+    gap: 1rem;
     margin-top: 2rem;
-    font-size: 2rem;
-
   }
 
-  .banner-title p {
-    margin: 0 2rem 0 2rem;
+  .product {
+    width: 100%;
+    height: 15rem;
+    margin-left: 0;
+  }
+
+  .product .thumbnail {
+    width: 30%;
+    height: 50%;
+  }
+
+  .product h2,
+  .product p,
+  .product a {
+    font-size: 0.6rem;
+  }
+
+  .product p {
+    font-weight: 700;
+  }
+
+  .product a {
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+
+  /*#PAGE LOGIN AND REGISTER*/
+  .login-container,
+  .register-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .input-field {
+    font-size: 12px;
+  }
+
+  .two-col {
+    font-size: small;
+  }
+
+  .file-label {
+    font-size: 12px;
+  }
+
+  /*#PAGE CONTACT*/
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+
+  .form-box {
+    width: 100%;
+    height: 800px;
+  }
+
+  .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and ((min-width: 1041px) and (max-width: 1280px)) {
+  .container {
+    width: var(--container-width-lg);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
     font-size: 0.8rem;
-
-
   }
 
-  #heading {
-    margin-top: 0;
-    padding-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--exDark);
+  .post {
+    margin-bottom: 30px;
   }
 
-  .row-img {
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
-    ;
+  .posts-container {
+    padding: 0 1.5rem;
   }
 
-
-
+  .post-img img {
+    object-fit: fill;
+  }
 }
