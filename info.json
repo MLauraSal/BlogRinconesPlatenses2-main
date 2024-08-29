@@ -1,0 +1,11 @@
+{
+    "sites": [
+        {
+            "username": "Admin",
+            "password": "admin123",
+            "email": "admin@example.com",
+            "profilePic": "images/avatar/avatar1.jpg"
+          }
+          
+    ]
+}
