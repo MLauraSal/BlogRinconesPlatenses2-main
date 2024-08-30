@@ -4,7 +4,7 @@
 \*-----------------------------------*/
 .contact {
     max-width: 900px;
-    margin: 200px auto 150px auto; 
+    margin: 150px auto 150px auto; 
     padding: 40px;
     height: auto;
     background:var(--white); 
@@ -43,8 +43,13 @@
    color: orange;
    margin-right:  10px;
 }
+
+.container-form form {
+    margin-top: 6rem;
+}
 .container-form form  .campo, textarea{
    width:  100%;
+   
    padding:  15px   10px;
    font-size: 15px;
    border: 1px solid #dbdbdb;
@@ -74,7 +79,7 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-@media screen and ((min-width: 375px) and (max-width: 539px)) {
+@media screen and ((min-width: 250px) and (max-width: 539px)) {
 
   
     .contact {
@@ -89,10 +94,13 @@
     }
 
     .container-form .info-form {
-        width: 70%;
+        width: 100%;
     }
 
-    
+    .container-form form {
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+    }
 
     .container-form form textarea{
        width: 100%;

@@ -386,11 +386,12 @@ footer {
     font-size: 0.7rem;
   }
 
+ 
   .posts-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
-    padding: 0 1.5rem;
+    
   }
 
   .post-info h2 a {
@@ -434,7 +435,7 @@ footer {
   }
 
   .title h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .title p {
